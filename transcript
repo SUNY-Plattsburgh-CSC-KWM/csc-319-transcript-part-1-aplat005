@@ -1,0 +1,110 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+class Course {
+private:
+    string courseName;     
+    string courseNumber;   
+    int credits;           
+    int grade;             
+
+public:
+    Course() {}
+    Course(string name, string number, int credits, int grade) {}
+
+    string getCourseName() const {
+
+    }
+    string getCourseNumber() const {
+
+    }
+    int getCredits() const {
+
+    }
+    int getGrade() const {
+
+    }
+    void setGrade(int grade) {
+
+    }
+
+    string toCSV() const {
+
+    }
+    void display() const {
+
+    }
+};
+
+class Semester {
+private:
+    vector<Course> courses;
+    int year;
+    int extension;
+
+public:
+    Semester() {}
+    Semester(int year, int extension) {}
+
+    void createCourse() {
+
+    }
+    void deleteCourse() {
+
+    }
+    void calculateGPA() {
+
+    }
+    void display() const {
+
+    }
+    string toCSV() const {
+
+    }
+};
+
+class Student {
+private:
+    string name;
+    vector<Semester> semesters;
+
+public:
+    Student() {}
+    Student(string name) {}
+
+    void createSemester() {
+
+    }
+    void deleteSemester() {
+
+    }
+
+    void display() const {
+
+    }
+    void summary() const {
+
+    }
+
+    void sortGrades() {
+
+    }
+    void sortCourseNumber() {
+
+    }
+
+    void saveCSV() {
+
+    }
+    void loadCSV() {
+
+    }
+
+    float calculateGPA() const {
+
+    }
+};
